@@ -1,0 +1,14 @@
+{
+    "name": "@ermal96/react-notification",
+    "version": "1.0.1",
+    "description": "Handle different notifications in a elegant way",
+    "license": "MIT",
+    "repository": "ermal96/react-notification",
+    "main": "index.js",
+    "keywords": [
+        "tiny",
+        "npm",
+        "package",
+        "bamblehorse"
+    ]
+}
