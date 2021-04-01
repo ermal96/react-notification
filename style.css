@@ -1,0 +1,80 @@
+.react-notification {
+  position: fixed;
+  top: 1.5rem;
+  left: 10vw;
+  right: 10vw;
+  z-index: 9999;
+}
+.react-content-box {
+  transition: all 0.3s;
+  position: absolute;
+  left: 50%;
+  color: #312e2e;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 1px solid #bbb8b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-content-box .animate-in {
+  animation: fade-in 0.3s;
+  animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+}
+
+.react-content-box .animate-out {
+  animation: fade-out 0.3s;
+  animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+}
+
+.react-notification-icon {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.react-content-box .info {
+  background: #1890ff;
+}
+
+.react-content-box .success {
+  background: #52c41a;
+}
+
+.react-content-box .error {
+  background: #f5222d;
+}
+
+.react-content-box .warn {
+  background: #faad14;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
